@@ -193,6 +193,7 @@ int main(){
     return 0;
 }
 */
+/*
 #include<iostream>
 #include <iomanip> // required for setw()
 using namespace std;
@@ -227,6 +228,38 @@ In cases like this, cout will print the entire number. setw only specifies the m
 the print field. Any number larger than the minimum will cause cout to override the setw value. You can use it with
 data type, eg, string.
 */
+
+// 3.8 Working with Character and String objects
+
+#include<iostream>
+#include<string>
+using namespace std;
+int main(){
+    // cin object only reads a word before a white space in string input if an input has more than one word.
+    // This is a problem and to get around this, Use getline(cin, variable) function.
+    string yourName;
+    string city;
+
+    /*
+    This code does not give correct output
+    cout<<"Please enter your lovely name: "<< endl;
+    cin>>yourName; // If name is entered Nabin Keerun, cin accepts only Nabin and keerun goes to city.
+    cout<< "Please enter your beautiful city's name: "<<endl;
+    cin>>city;
+    cout<<yourName<<city<<endl;
+    */
+    // above does not work as expected. So, use getline(cin, variable) method.
+    cout<<"Please enter your lovely name: "<< endl;
+    //cin>>yourName; // instead do the following:
+    getline(cin, yourName);
+
+    cout << "Please enter your city: "<<endl;
+    getline(cin, city);
+
+    cout<<"Hi "<<yourName<<", city you live in is "<<city<<endl;
+
+    return 0;
+}
 
 
 
