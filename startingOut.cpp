@@ -208,6 +208,11 @@ int main(){
     // showpoint precision --> To print out trailing zeros in floating point numbers.
     double value2 = 1.2;
     cout<< setprecision(6)<<showpoint<<value2<<endl; // Due to showpoint, it means 6 digits after decimal
+    // left manipulatro --> To left justify the output
+    double value3 = 123.18;
+    cout<<setw(6)<<value3<<endl;
+    cout<<left<<setw(10)<<value3<<endl;
+   
     return 0;
 }
 // This will cause the following output:
