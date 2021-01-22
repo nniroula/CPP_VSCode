@@ -182,6 +182,7 @@ int main(){
 */
 /* type_cast<data type>(value) */
 // Convert a character to its ASCII code 
+/*
 #include<iostream>
 using namespace std;
 int main(){
@@ -191,8 +192,36 @@ int main(){
     cout<<static_cast<int>(letter);
     return 0;
 }
+*/
+#include<iostream>
+#include <iomanip> // required for setw()
+using namespace std;
+int main(){
+    //int value = 23.3314;
+    int value = 23;
+    // setw(number) means field width; setw right justifies.
+    cout << "(" << setw(5) << value << ")" << endl;
+    // setprecision fixed
+    cout << setprecision(2) << fixed<<endl;;
+    cout << setw(3)<<value<<endl; 
 
-
+    // showpoint precision --> To print out trailing zeros in floating point numbers.
+    double value2 = 1.2;
+    cout<< setprecision(6)<<showpoint<<value2<<endl; // Due to showpoint, it means 6 digits after decimal
+    return 0;
+}
+// This will cause the following output:
+// ( 23) 3 blank spaces are printed before it since 23 occupies only 2 character spaces.
+ //Notice that the number occupies the last two positions in the field. Since the number did not use 
+// the entire field, cout filled the extra 3 positions with blank spaces. Because the number appears on the right 
+// side of the field with blank spaces “padding” it in front, it is said to be right-justified.
+/*
+value = 18397;
+cout << setw(2) << value;
+In cases like this, cout will print the entire number. setw only specifies the minimum num- ber of positions in 
+the print field. Any number larger than the minimum will cause cout to override the setw value. You can use it with
+data type, eg, string.
+*/
 
 
 
