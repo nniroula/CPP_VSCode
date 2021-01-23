@@ -230,7 +230,7 @@ data type, eg, string.
 */
 
 // 3.8 Working with Character and String objects
-
+/*
 #include<iostream>
 #include<string>
 using namespace std;
@@ -247,7 +247,7 @@ int main(){
     cout<< "Please enter your beautiful city's name: "<<endl;
     cin>>city;
     cout<<yourName<<city<<endl;
-    */
+  
     // above does not work as expected. So, use getline(cin, variable) method.
     cout<<"Please enter your lovely name: "<< endl;
     //cin>>yourName; // instead do the following:
@@ -260,6 +260,28 @@ int main(){
 
     return 0;
 }
+*/
+//3.9
+/* Random number generator */
+/* Use rand() function, srand() function, and time() fucntion to generate radnom numbers*/
+
+#include<iostream>
+#include<ctime>
+#include<cstdlib>
+using namespace std;
+
+int main(){
+    int radNumber;
+    // get the system time
+    unsigned seed = time(0);
+    //seed the random number generator
+    srand(seed);
+    //display random numbers
+    cout<<rand()<<endl;
+
+    return 0;
+}
+
 
 
 
