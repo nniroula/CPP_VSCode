@@ -264,7 +264,7 @@ int main(){
 //3.9
 /* Random number generator */
 /* Use rand() function, srand() function, and time() fucntion to generate radnom numbers*/
-
+/*
 #include<iostream>
 #include<ctime>
 #include<cstdlib>
@@ -278,6 +278,24 @@ int main(){
     //display random numbers
     cout<<rand()<<endl;
 
+    return 0;
+}*/
+
+// CHAPTER 4 characters and strings
+
+/* comparing two string objects; means to compare each corresponding character based on its ASCII value */
+
+#include<iostream>
+#include<string>
+#include<iomanip>
+using namespace std;
+int main(){
+    string str1 = "ABC";    // NOTE: VSCODE does not support '' for string literals. use "" for it.
+    string str2 = "XYZ";
+
+    if(str1 < str2){
+        cout<<"String1 is less than string2"<<endl;
+    }
     return 0;
 }
 
