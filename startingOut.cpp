@@ -271,7 +271,6 @@ int main(){
 using namespace std;
 
 int main(){
-    int radNumber;
     // get the system time
     unsigned seed = time(0);
     //seed the random number generator
