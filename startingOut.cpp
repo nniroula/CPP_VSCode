@@ -354,8 +354,9 @@ int main(){
     int value = 4;
     //postfix is value++
     cout<<value++<<endl; // this does not print 5, but it prints 4, and then increments value by 1.
-    value++;
-    cout<<value<<endl;
+    
+    // prefix means ++value
+    cout<<++value<<endl;  // this adds 1 to value and prints 5.
     return 0;
 }
 
