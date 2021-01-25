@@ -303,6 +303,7 @@ int main(){
 /* switch statement for menu systems.
     Use the switch statemnents to determine the item selected from the menu, and calculate the associated cost.
 */
+/*
 #include<iostream>
 #include<iomanip>
 using namespace std;
@@ -344,6 +345,20 @@ int main(){
     }
     return 0;
 }
+*/
+
+/* Postfix and prefix modes */
+#include<iostream>
+using namespace std;
+int main(){
+    int value = 4;
+    //postfix is value++
+    cout<<value++<<endl; // this does not print 5, but it prints 4, and then increments value by 1.
+    value++;
+    cout<<value<<endl;
+    return 0;
+}
+
 
 
 
