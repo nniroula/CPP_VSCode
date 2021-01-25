@@ -348,15 +348,33 @@ int main(){
 */
 
 /* Postfix and prefix modes */
+/*
 #include<iostream>
 using namespace std;
 int main(){
     int value = 4;
     //postfix is value++
     cout<<value++<<endl; // this does not print 5, but it prints 4, and then increments value by 1.
-    
+
     // prefix means ++value
     cout<<++value<<endl;  // this adds 1 to value and prints 5.
+    return 0;
+}
+*/
+
+// The while loop for input validation
+#include<iostream>
+using namespace std;
+int main(){
+    int valueStore;
+    cout<<"Please enter a number in the range of 1 - 100"<<endl;
+    cin>>valueStore;
+    while(valueStore <= 0 || valueStore >= 100){
+        cout<<"That is invalid input"<<endl;
+        cout<<"Please entter a valid number between 1 - 100"<<endl;
+        cin>>valueStore;
+    }
+    cout<<"You entered "<<valueStore<<endl;
     return 0;
 }
 
