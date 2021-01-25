@@ -363,6 +363,7 @@ int main(){
 */
 
 // The while loop for input validation
+/*
 #include<iostream>
 using namespace std;
 int main(){
@@ -377,6 +378,7 @@ int main(){
     cout<<"You entered "<<valueStore<<endl;
     return 0;
 }
+*/
 
 
 
