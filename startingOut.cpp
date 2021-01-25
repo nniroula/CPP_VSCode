@@ -378,7 +378,28 @@ int main(){
     cout<<"You entered "<<valueStore<<endl;
     return 0;
 }
+*/ 
+
+/* do while loop */
+/* This program will ask user to input 3 test scores and calculates average. It then will ask user if he/she wants
+    to try a new set of test scores
 */
+#include<iostream>
+using namespace std;
+int main(){
+    double score1, score2, score3, average;
+    char nextTry;
+    do{
+        cout<<"Plese enter 3 test scores"<<endl;
+        cin>>score1>>score2>>score3;
+        average = (score1 + score2 + score3)/3;
+        cout<<"Your average score is "<<average<<endl;
+        cout<<"Do you want to try another set of tests? (Y/N)"<<endl;
+        cin>>nextTry;
+    }while(nextTry == 'y' || nextTry == 'Y');
+    return 0;
+}
+
 
 
 
