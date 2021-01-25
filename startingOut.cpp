@@ -305,7 +305,6 @@ int main(){
 */
 #include<iostream>
 #include<iomanip>
-
 using namespace std;
 int main(){
     double firstClassTicket = 4.5,
@@ -320,6 +319,7 @@ int main(){
     cout<<"Please choose one option from above"<<endl;
     cin>>choices;
     //cout<<choices<<"\n";
+    cout<<fixed<<showpoint<<setprecision(3);
     switch(choices){  // if choices is 1, then case should be 1 in order for the case 1 to work
         int qnty;
         case 1:
