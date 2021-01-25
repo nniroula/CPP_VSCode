@@ -284,7 +284,7 @@ int main(){
 // CHAPTER 4 characters and strings
 
 /* comparing two string objects; means to compare each corresponding character based on its ASCII value */
-
+/*
 #include<iostream>
 #include<string>
 #include<iomanip>
@@ -298,7 +298,52 @@ int main(){
     }
     return 0;
 }
+*/
 
+/* switch statement for menu systems.
+    Use the switch statemnents to determine the item selected from the menu, and calculate the associated cost.
+*/
+#include<iostream>
+#include<iomanip>
+
+using namespace std;
+int main(){
+    double firstClassTicket = 4.5,
+            secondClassTicket = 2.2,
+            thirdClassTicket = 1.5;
+    int choices;
+    //dislay choices
+    cout<<"\t MENU CHOICES"<<endl;
+    cout<<"1. firstClassTicket \n"
+        <<"2. secondClassTicket \n"
+        <<"3. thirdClassTicket"<<endl;
+    cout<<"Please choose one option from above"<<endl;
+    cin>>choices;
+    //cout<<choices<<"\n";
+    switch(choices){  // if choices is 1, then case should be 1 in order for the case 1 to work
+        int qnty;
+        case 1:
+            cout<<"How many you want: ";
+            cin>>qnty;
+            cout<<"your total cost is $"
+                <<qnty * firstClassTicket<<endl;
+                break;                          // NOTE: if you do not use break, default also gets executed.
+        case 2:
+            cout<<"How many you want: ";
+            cin>>qnty;
+            cout<<"Your total cost is $"<<qnty * secondClassTicket<<endl;
+            break;
+        case 3:
+            cout<<"How many you want: ";
+            cin>>qnty;
+            cout<<"Your total cost is $"<<qnty * thirdClassTicket<<endl;
+            break;
+        
+        default:
+            cout<<"Your selection was invalid"<<endl;
+    }
+    return 0;
+}
 
 
 
