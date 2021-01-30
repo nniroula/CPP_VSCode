@@ -406,6 +406,7 @@ int main(){
     File stream fstream, ifstream, and ofstream.
     This program writings data to a file
 */
+/* 
 #include<iostream>
 //#include<ifstream>
 //#include<ofstream>
@@ -422,6 +423,31 @@ int main(){
     outputFile.close();
     // write this code to test that your program is executing fine
     cout<<"Done!"<<endl; // this prints output on the screen telling that program is fine.
+    return 0;
+}
+*/
+/*
+This program gets user's input and writes user's input to a file
+*/
+#include<iostream>
+#include<fstream>
+using namespace std;
+int main(){
+    // get user's input
+    cout<<"pelase enter any 3 numbers you like the most"<<endl;
+    double num1, num2, num3;
+    cin>>num1>>num2>>num3;
+    //cout<<num1<<" "<< num2<<" "<< num3<<endl; // to check it is working fine
+    
+    // create an output file
+    ofstream outputFile;
+    outputFile.open("second.txt");
+    //write data to a file
+    outputFile<<num1<<" "<<num2<<" "<<num3<<endl;
+    //close that file
+    outputFile.close();
+    //cout to verfity that the program executes nicely, if you do not have any cout before.
+    //cout<<"DONE!"<<endl;
     return 0;
 }
 
