@@ -384,6 +384,7 @@ int main(){
 /* This program will ask user to input 3 test scores and calculates average. It then will ask user if he/she wants
     to try a new set of test scores
 */
+/*
 #include<iostream>
 using namespace std;
 int main(){
@@ -397,6 +398,28 @@ int main(){
         cout<<"Do you want to try another set of tests? (Y/N)"<<endl;
         cin>>nextTry;
     }while(nextTry == 'y' || nextTry == 'Y');
+    return 0;
+}
+*/
+
+/*
+    File stream fstream, ifstream, and ofstream.
+    This program writings data to a file
+*/
+#include<iostream>
+//#include<ifstream>
+//#include<ofstream>
+#include<fstream>
+using namespace std;
+int main(){
+    // create or open file 
+    ofstream outputFile;
+    outputFile.open("first.txt");
+    // write to or read from that file
+    outputFile<<"My name is Nabin Niroula"<<endl;
+    outputFile<<"I am learning to code myself\n";
+    //close a file
+    outputFile.close();
     return 0;
 }
 
