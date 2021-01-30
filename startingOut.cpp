@@ -420,6 +420,8 @@ int main(){
     outputFile<<"I am learning to code myself\n";
     //close a file
     outputFile.close();
+    // write this code to test that your program is executing fine
+    cout<<"Done!"<<endl; // this prints output on the screen telling that program is fine.
     return 0;
 }
 
