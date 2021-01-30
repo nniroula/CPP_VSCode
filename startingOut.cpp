@@ -477,6 +477,7 @@ int main(){
     fileInput>>fileReadIn;
     cout<<fileReadIn<<endl;
     cout<<"DONE!\n";
+    fileInput.close();
 
     return 0;
 }
