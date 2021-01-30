@@ -429,6 +429,7 @@ int main(){
 /*
 This program gets user's input and writes user's input to a file
 */
+/*
 #include<iostream>
 #include<fstream>
 using namespace std;
@@ -438,7 +439,6 @@ int main(){
     double num1, num2, num3;
     cin>>num1>>num2>>num3;
     //cout<<num1<<" "<< num2<<" "<< num3<<endl; // to check it is working fine
-    
     // create an output file
     ofstream outputFile;
     outputFile.open("second.txt");
@@ -448,6 +448,36 @@ int main(){
     outputFile.close();
     //cout to verfity that the program executes nicely, if you do not have any cout before.
     //cout<<"DONE!"<<endl;
+    return 0;
+}
+*/
+
+// Read data from a file
+#include<iostream>
+#include<fstream>
+#include<string>
+using namespace std;
+int main(){
+    // setup to read a file
+    string fileReadIn;
+    ifstream fileInput;
+    fileInput.open("second.txt"); // read a file named second.txt
+     
+    //store the read in information somewhere, this could be variable or another file
+   // To read Nabin Niroula Aurora Colorado --> 4 couts and fileInput.
+    fileInput>>fileReadIn;
+    cout<<fileReadIn<<endl;
+
+    fileInput>>fileReadIn;
+    cout<<fileReadIn<<endl;
+
+    fileInput>>fileReadIn;
+    cout<<fileReadIn<<endl;
+
+    fileInput>>fileReadIn;
+    cout<<fileReadIn<<endl;
+    cout<<"DONE!\n";
+
     return 0;
 }
 
