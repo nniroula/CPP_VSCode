@@ -451,7 +451,7 @@ int main(){
     return 0;
 }
 */
-
+/*
 // Read data from a file
 #include<iostream>
 #include<fstream>
@@ -478,6 +478,34 @@ int main(){
     cout<<fileReadIn<<endl;
     cout<<"DONE!\n";
     fileInput.close();
+
+    return 0;
+}
+*/
+/*
+    Use the loop to process file
+    This program gets input from a user and processes it to calcualte total sales, and
+    writes data to a file.
+*/
+#include<iostream>
+#include<fstream>
+
+using namespace std;
+int main(){
+    // create file to write data to it
+    ofstream outPutFile;
+    outPutFile.open("sales.txt");
+    // get sales for each and write that data to output file, ask number of days of sales
+    int numberOfDays;
+    cout<<"Please enter a number of days for the sales record"<<endl;
+    cin>>numberOfDays;
+    // create a for loop to retain the sales record
+    for(int i = 0; i<numberOfDays; i++){
+        cout<<"please enter the total amount of the sales for the day\n";
+        double salesOfTheDay;
+        cin>>salesOfTheDay;
+        outPutFile<<" "<<salesOfTheDay<<endl; // the space here displays data on a new line
+    }
 
     return 0;
 }
