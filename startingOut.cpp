@@ -500,12 +500,14 @@ int main(){
     cout<<"Please enter a number of days for the sales record"<<endl;
     cin>>numberOfDays;
     // create a for loop to retain the sales record
-    for(int i = 0; i<numberOfDays; i++){
-        cout<<"please enter the total amount of the sales for the day\n";
+    for(int i = 1; i<=numberOfDays; i++){
+        cout<<"please enter the total amount of the sales for the day"<<" "<<i<<endl;
         double salesOfTheDay;
         cin>>salesOfTheDay;
         outPutFile<<" "<<salesOfTheDay<<endl; // the space here displays data on a new line
     }
+    //close the file
+    outPutFile.close();
 
     return 0;
 }
