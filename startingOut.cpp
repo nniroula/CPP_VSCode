@@ -487,6 +487,7 @@ int main(){
     This program gets input from a user and processes it to calcualte total sales, and
     writes data to a file.
 */
+/*
 #include<iostream>
 #include<fstream>
 
@@ -507,6 +508,33 @@ int main(){
         outPutFile<<" "<<salesOfTheDay<<endl; // the space here displays data on a new line
     }
     //close the file
+    outPutFile.close();
+
+    return 0;
+}
+*/
+
+/*
+    Write a program to read files from second.txt, in which program detectst the end of the file.
+*/
+#include <iostream>
+#include <fstream>
+#include <string>
+using namespace std;
+int main(){
+    string fileValues;
+    // read data from the file second.txt
+    ifstream inPutFile;
+    inPutFile.open("second.txt");
+    // create output file
+    ofstream outPutFile;
+    outPutFile.open("outPutSecond.txt");
+
+    while(inPutFile>>fileValues){ // To detect the end of the file
+        //write that data from second.txt file to another file
+        outPutFile<<fileValues<<endl;
+    }
+    inPutFile.close();
     outPutFile.close();
 
     return 0;
