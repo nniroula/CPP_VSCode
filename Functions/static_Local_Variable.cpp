@@ -6,16 +6,22 @@ each function local b/c once the function returns, the local variable is destroy
 using namespace std;
 
 //function prototype
-int findNumber();
+int findNumber(int);
 int main(){
-    //call the function
-    for(int i = 0; i< 5; i++){
-        findNumber();
-    }
+    //call the function 5 times
+    // for(int i = 0; i< 5; i++){
+    //     findNumber();
+    // }
+    int numbs;
+    cout<<"Please enter your favorite number: "<<endl;
+    cin>>numbs;
+    findNumber(numbs);
+    findNumber(numbs);
+    findNumber(numbs);
     return 0;
 }
-int findNumber(){
-    static int num;
-    cout<<"The number is "<<num<<endl;
-    num++;
+int findNumber(int num){
+    static int number = num;
+    cout<<"The number is "<<number<<endl;
+    return number++;
 }
