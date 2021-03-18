@@ -1,5 +1,7 @@
 #include<iostream>
 using namespace std;
+// bubble sort compares two values starting at index o and 1, swaps if value at 1 is smaller than value at 0. Otherwise
+// no swapping. Then compares 1 and 2, does same thing. Once a round is over, same thing happens in subsequent rounds.
 //function prototype
 void bubbleSort(int [], int);
 void display(int [], int);
